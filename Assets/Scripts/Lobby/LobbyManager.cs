@@ -1,0 +1,17 @@
+using UnityEngine;
+
+public class LobbyManager : MonoBehaviour
+{
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
+        SteamLobby.Instance.CreateLobby();
+        LobbyUIManager.Instance.OnClickRefresh();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+}
